@@ -1,0 +1,58 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #e1e4e8;
+}
+
+.card-header {
+    background: #1a73e8; /* Azul corporativo */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #5f6368;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.value {
+    color: #202124;
+    font-weight: 500;
+}
+
+.card-footer {
+    background: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    color: #70757a;
+}
