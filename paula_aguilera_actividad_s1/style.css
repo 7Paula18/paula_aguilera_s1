@@ -1,0 +1,111 @@
+:root {
+    --bg-dark: #0d1117;
+    --card-bg: #161b22;
+    --accent: #f0db4f; /* Dorado FinTech */
+    --text-main: #e6edf3;
+    --text-dim: #8b949e;
+    --success: #3fb950;
+    --error: #f85149;
+    --border: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card-bg);
+}
+
+.header {
+    background: #21262d;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+}
+
+.header h1 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.badge {
+    background: var(--bg-dark);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin: 0 5px;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-dim);
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
+
+.grid-stats {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.value { font-weight: bold; }
+.status-active { color: var(--success); }
+
+.calculation-box {
+    background: var(--bg-dark);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.calculation-box strong {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.boolean-checks p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.bool-true { color: var(--success); font-weight: bold; }
+.bool-false { color: var(--error); font-weight: bold; }
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
