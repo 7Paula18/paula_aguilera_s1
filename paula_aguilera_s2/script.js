@@ -4,19 +4,14 @@
 
 // Nombre del dominio
 const DOMAIN_NAME = "FinTech Asset Manager";
-
 // "Nombre del elemento" 
 const itemName = "Bitcoin (BTC)";
-
 // Agrega una categoría, tipo o descripción corta (string)
 const itemCategory = "Criptoactivo de alta volatilidad";
-
 // Número relevante a tu dominio (integer o decimal)
 const itemQuantity = 25500.50; // Monto de la inversión
-
 // Boolean con prefijo semántico (is/has/can/should)
 const isMarketOpen = true;
-
 // Valor null "no asignado aún"
 const assignedBroker = null; 
 
@@ -77,17 +72,3 @@ console.log("");
 console.log("===========================");
 console.log("FIN DE FICHA");
 console.log("===========================");
-
-// 1. Seleccionamos los elementos del HTML por su ID
-const uiName = document.getElementById('display-name');
-const uiCat = document.getElementById('display-cat');
-const uiQty = document.getElementById('display-qty');
-const uiBool = document.getElementById('display-bool');
-const uiFooter = document.getElementById('display-footer');
-
-// 2. Les asignamos los valores de nuestras variables
-uiName.textContent = itemName;
-uiCat.textContent = itemCategory;
-uiQty.textContent = `$${itemQuantity.toLocaleString()}`; // Formato con comas
-uiBool.textContent = isMarketOpen ? "Abierto" : "Cerrado";
-uiFooter.textContent = `Dominio: ${DOMAIN_NAME} | 2026`;
